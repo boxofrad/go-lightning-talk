@@ -1,0 +1,87 @@
+Let's a Go!
+
+A lightning tour of the Go programming language
+
+* What is it?
+
+- A programming language... duh!
+- Made by the folks at Google
+- Ironically impossible to "Google for" (search for "Golang" instead)
+- Loved by many "Gophers"
+
+.image gopher.jpg
+
+* Compiled
+
+But the compiler is super quick and gives decent error messages!
+
+.image compiling.png
+
+* Static
+
+- Variables have types, and the compiler will slap you if you use 'em wrong
+
+.play static.go /var name/,/name/
+
+- Type inference (compiler will figure out the types for you)
+
+.play inference.go /name/,/1/
+
+* Object Oriented?
+
+No classes... just structs and functions (kinda like C)
+
+.play oo.go
+
+* Interfaces!
+
+My favourite feature... implicit opt-in!
+
+.code interfaces.go /type Animal/,/}/
+.code interfaces.go /cat.+MakeNoise/,/}/
+.code interfaces.go /dog.+MakeNoise/,/}/
+.play interfaces.go /func annoyNeighbours/,/end/
+
+* Concurrency!
+
+.play concurrency.go
+
+* Multiple Return Values
+
+.play multiple_return_values.go
+
+* Error handling
+
+- No exceptions
+- ... but that's by design!
+
+.code errors.go
+
+* Use Cases
+
+* Command Line Tools
+
+Installing grunt (simple edition):
+
+  xcode-select --install
+  # Agree to the EULA
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  brew install node npm
+  npm install -g grunt-cli
+
+.image picard.jpg
+
+* Command Line Tools
+
+Installing something written in Go:
+
+- Download it
+- Stick it in your $PATH
+
+.image unix.jpg
+
+* Anything Where...
+
+- Performance is important but you don't wanna write C
+- Limited resources
+- You want easy deployment :)
